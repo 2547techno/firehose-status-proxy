@@ -34,7 +34,7 @@ app.get("/status", async (req, res) => {
                     console.log(err);
                     return resolve({
                         name: node.name,
-                        err: true,
+                        error: true,
                     });
                 });
         });
