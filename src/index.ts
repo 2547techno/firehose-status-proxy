@@ -1,9 +1,12 @@
 import { Node, config } from "./lib/config";
 import Express from "express";
+import cors from "cors";
 const PORT = config.port ?? 3002;
 const nodes: Node[] = config.nodes;
 
 const app = Express();
+
+app.use(cors());
 
 app.get("/status", async (req, res) => {
     const statuses: Promise<any>[] = [];
