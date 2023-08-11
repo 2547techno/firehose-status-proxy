@@ -1,0 +1,5 @@
+node_modules/
+channels*.txt
+config.json
+out/
+*.bkp
